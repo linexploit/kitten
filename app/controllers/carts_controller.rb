@@ -5,6 +5,10 @@ class CartsController < ApplicationController
     @cart = current_user.cart
   end
 
+  def edit
+    @cart = Cart.find(params[:id])
+   end
+
   def create
     @cart = current_user.build_cart
     if @cart.save
@@ -28,6 +32,7 @@ class CartsController < ApplicationController
     @cart.destroy
     redirect_to root_path, notice: 'Votre panier a été supprimé avec succès.'
   end
+
 
   def add_item
     @cart = current_user.cart || current_user.create_cart
@@ -59,8 +64,9 @@ class CartsController < ApplicationController
 
   private
 
-  # def cart_params
-  #   # Ajoutez ici les paramètres que vous souhaitez autoriser lors de la création ou de la mise à jour du panier
-  #   params.require(:cart).permit(:parametre_1, :parametre_2, ...)
-  # end
+  def set_cart
+    @cart = Cart.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to carts_path, alert: "Cart not found."
+  end
 end

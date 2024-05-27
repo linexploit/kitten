@@ -7,7 +7,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  private
 
   def create_cart
     self.create_cart!

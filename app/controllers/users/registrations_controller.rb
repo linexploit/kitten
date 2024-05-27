@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
-  after_action :create_cart, only: :create
+  after_action :create_cart, only: [:create]
+
+
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
@@ -63,6 +65,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
 
   def create_cart
-    current_user.create_cart if user_signed_in?
+    current_user.create_cart if user_signed_in? && current_user.cart.nil?
   end
 end

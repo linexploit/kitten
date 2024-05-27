@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   }
   resources :items, only: [:index, :show]
   resources :users, only: [:show, :edit, :update]
-  resources :items, only: [:show]
+  resources :items, only: [:index, :show]
   resources :carts, only: [:show, :create, :edit, :update, :destroy] do
     delete 'remove_item/:item_id', to: 'carts#remove_item', as: 'remove_item'
     post 'add_item/:item_id', to: 'carts#add_item', as: 'add_item'

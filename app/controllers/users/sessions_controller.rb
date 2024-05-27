@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
-  after_action :create_cart, only: :create
-    # before_action :configure_sign_in_params, only: [:create]
+  after_action :create_cart, only: [:create]
+
+  # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
   # def new
@@ -29,6 +30,6 @@ class Users::SessionsController < Devise::SessionsController
   private
 
   def create_cart
-    current_user.create_cart! if user_signed_in? && current_user.cart.nil?
+    current_user.create_cart if user_signed_in? && current_user.cart.nil?
   end
 end
