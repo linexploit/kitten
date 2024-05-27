@@ -1,0 +1,25 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="<%= @item.image_url %>" alt="<%= @item.title %>">
+                    <div class="card-body">
+                        <h2 class="card-title fw-bold"><%= @item.title %></h2>
+                        <h3 class="card-subtitle mb-2 text-muted"><%= number_to_currency(@item.price) %></h3>
+                        <p class="card-text"><%= @item.description %></p>
+                        <div class="text-center">
+                            <% if user_signed_in? %>
+                                <%= form_with url: cart_add_item_path(current_user.cart, @item), method: :post, local: true do %>
+                                  <%= submit_tag 'Add to cart', class: 'btn btn-outline-dark' %>
+                                <% end %>
+                            <% else %>
+                                <%= link_to 'Log in to add to cart', new_user_session_path, class: 'btn btn-outline-dark' %>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

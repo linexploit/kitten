@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand">😼 K I T T E N</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<%= root_path %>">Home</a></li>
+                <% if user_signed_in? %>
+                    <!-- Afficher "Mon profil" et "Déconnexion" si l'utilisateur est connecté -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mon compte</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="<%= user_path(current_user) %>">Profil</a></li>
+                            <li>
+                              <%= form_tag(destroy_user_session_path, method: :delete) do %>
+                              <%= button_tag(type: 'submit', class: 'dropdown-item', style: 'background: none; border: none; cursor: pointer;') do %>
+                              Se déconnecter
+                              <% end %>
+                              <% end %>
+                        </ul>
+                    </li>
+                    <% if current_user.cart.present? %>
+                      <li class="nav-item"><a class="nav-link" href="<%= cart_path(current_user.cart) %>">Mon panier</a></li>
+                    <% end %>
+                <% else %>
+                    <!-- Afficher "Se connecter / S'inscrire" si l'utilisateur n'est pas connecté -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sign in/up</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="<%= new_user_session_path %>">Se connecter</a></li>
+                            <li><a class="dropdown-item" href="<%= new_user_registration_path %>">S'inscrire</a></li>
+                        </ul>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</nav>
