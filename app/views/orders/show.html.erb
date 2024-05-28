@@ -18,4 +18,4 @@
   </ul>
 </div>
 
-
+<%= button_to "Payer", checkout_create_path(total: @order.items.sum(:price), order_id: @order.id), class: "btn btn-primary mt-3", data: { turbo: false } %>
