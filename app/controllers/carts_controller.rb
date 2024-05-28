@@ -5,12 +5,11 @@ class CartsController < ApplicationController
     @cart = current_user.cart
     @cart_items = @cart.cart_items
     @total_price = @cart.items.sum(&:price)
-
   end
 
   def edit
     @cart = Cart.find(params[:id])
-   end
+  end
 
   def create
     @cart = current_user.build_cart
@@ -30,12 +29,6 @@ class CartsController < ApplicationController
     end
   end
 
-  def destroy
-    @cart = current_user.cart
-    @cart.destroy
-    redirect_to root_path, notice: 'Votre panier a été supprimé avec succès.'
-  end
-
   def add_item
     @cart = current_user.cart || current_user.create_cart
     item = Item.find(params[:item_id])
@@ -53,22 +46,18 @@ class CartsController < ApplicationController
   def confirm_order
     @cart = current_user.cart
     if @cart.items.any?
-      order = current_user.orders.create
+      order = current_user.orders.create(total_price: @cart.items.sum(&:price))
       @cart.items.each do |item|
-        order.order_items.create(item: item)
+        order.order_items.create(item: item, price: item.price)
       end
       @cart.items.clear
-      redirect_to order_path(order), notice: 'Votre commande a été passée avec succès.'
+      redirect_to new_order_path(order), notice: 'Votre commande a été passée avec succès.'
     else
       redirect_to @cart, alert: 'Votre panier est vide.'
     end
   end
 
   private
-
-  def set_cart
-    @cart = current_user.cart || current_user.create_cart
-  end
 
   def cart_params
     params.require(:cart).permit(:user_id)

@@ -31,6 +31,7 @@
   </table>
 
   <div class="text-center">
+    <%= button_to 'Passer commande', cart_confirm_order_path(@cart), method: :post, class: 'btn btn-success' %>
   </div>
 <% else %>
   <p>Votre panier est vide.</p>
