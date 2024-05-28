@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+gem 'jquery-rails'
+gem 'bootstrap', '~> 5.0.0'
+
 gem 'faker'
 
 gem 'table_print'
