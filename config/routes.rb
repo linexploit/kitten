@@ -5,7 +5,6 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     sessions: 'users/sessions'
   }
-  resources :items, only: [:index, :show]
   resources :users, only: [:show, :edit, :update]
   resources :items, only: [:index, :show]
   resources :carts, only: [:show, :create, :edit, :update, :destroy] do
