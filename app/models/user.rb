@@ -10,7 +10,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-  def create_cart
-    self.create_cart!
-  end
+
 end
