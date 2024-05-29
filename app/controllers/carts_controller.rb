@@ -1,8 +1,12 @@
 class CartsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_cart, only: [:show, :edit, :update, :destroy, :confirm_order]
 
   def show
     @cart = current_user.cart
+    @cart_items = @cart.cart_items
+    @total_price = @cart.items.sum(&:price)
+
   end
 
   def edit
@@ -32,7 +36,6 @@ class CartsController < ApplicationController
     @cart.destroy
     redirect_to root_path, notice: 'Votre panier a été supprimé avec succès.'
   end
-
 
   def add_item
     @cart = current_user.cart || current_user.create_cart
@@ -65,8 +68,10 @@ class CartsController < ApplicationController
   private
 
   def set_cart
-    @cart = Cart.find(params[:id])
-  rescue ActiveRecord::RecordNotFound
-    redirect_to carts_path, alert: "Cart not found."
+    @cart = current_user.cart || current_user.create_cart
+  end
+
+  def cart_params
+    params.require(:cart).permit(:user_id)
   end
 end
