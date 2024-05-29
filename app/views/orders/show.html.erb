@@ -1,9 +1,21 @@
-<h1>Commande #<%= @order.id %></h1>
+<h1 class="mt-4">Commande #<%= @order.id %></h1>
 
-<ul>
-  <% @order.items.each do |item| %>
-    <li><%= item.title %> - <%= number_to_currency(item.price) %></li>
-  <% end %>
-</ul>
+<div class="card mt-3">
+  <div class="card-header">
+    Détails de la commande
+  </div>
+  <ul class="list-group list-group-flush">
+    <% @order.items.each do |item| %>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <%= item.title %>
+        <span><%= number_to_currency(item.price) %></span>
+      </li>
+    <% end %>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <strong>Total</strong>
+      <strong><%= number_to_currency(@order.items.sum(:price)) %></strong>
+    </li>
+  </ul>
+</div>
 
-<p>Total: <%= number_to_currency(@order.items.sum(:price)) %></p>
+<%= button_to "Payer", checkout_create_path(total: @order.items.sum(:price), order_id: @order.id), class: "btn btn-primary mt-3", data: { turbo: false } %>

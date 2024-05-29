@@ -12,8 +12,11 @@ gem 'devise'
 
 gem 'dotenv-rails'
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
+
+gem 'jquery-rails'
+
+gem 'bootstrap', '~> 5.0.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"

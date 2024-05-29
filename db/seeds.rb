@@ -18,7 +18,6 @@ Item.destroy_all
     description: Faker::Lorem.paragraph(sentence_count: 3),
     price: Faker::Commerce.price(range: 10.0..100.0, as_string: true).to_d,
     image_url: Faker::LoremFlickr.image(size: "300x300", search_terms: ['cat'])
-    #change en image_url
   )
 end
 
