@@ -1,12 +1,14 @@
 <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
   <div class="card p-4"> 
     <div class="image d-flex flex-column justify-content-center align-items-center"> 
+      <div> 
+        <img src="https://www.creativefabrica.com/wp-content/uploads/2021/01/26/Cat-Icon-Graphics-8071439-1.jpg" height="100" width="100" />
+      </div> 
       <span class="name mt-3">Profil de <%= @user.email %></span> 
       <div class="d-flex mt-2">
         <% if @user.profile_picture.attached? %>
-          <%= image_tag @user.profile_picture, alt: 'Profil Picture', class: 'profile-picture' %>
+<%= image_tag @user.profile_picture, alt: 'Profile Picture', size: "150x150" %>
         <% else %>
-          <img src="https://www.creativefabrica.com/wp-content/uploads/2021/01/26/Cat-Icon-Graphics-8071439-1.jpg" height="100" width="100" />
           <p>=== Il n'y a pas encore de photo de profil liée à cet utilisateur ===</p>
         <% end %>
       </div>
