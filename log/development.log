@@ -16132,3 +16132,1317 @@ puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
 puma (6.4.2) lib/puma/server.rb:464:in `process_client'
 puma (6.4.2) lib/puma/server.rb:245:in `block in run'
 puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/linexploit/THP/kitten/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-29 09:12:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 40.4ms | Allocations: 18701)
+  Rendered layouts/_nav.html.erb (Duration: 1.4ms | Allocations: 618)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 119.2ms | Allocations: 70690)
+Completed 200 OK in 312ms (Views: 114.5ms | ActiveRecord: 7.2ms | Allocations: 358527)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-29 09:12:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-29 09:12:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-05-29 09:12:45 +0100
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 577)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2979)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 5382)
+Completed 200 OK in 31ms (Views: 8.7ms | ActiveRecord: 2.9ms | Allocations: 15779)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-29 09:12:46 +0100
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-29 09:12:46 +0100
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 1090)
+
+
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 983)
+
+
+Started GET "/users/assets/favicon.ico" for 127.0.0.1 at 2024-05-29 09:12:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/favicon.ico"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2024-05-29 09:12:56 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 220)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1593)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3912)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5767)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-29 09:12:56 +0100
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 989)
+
+
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-29 09:12:56 +0100
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 989)
+
+
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-29 09:12:56 +0100
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 986)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-29 09:13:03 +0100
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ttt@t.t", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (4.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ttt@t.t"], ["LIMIT", 1]]
+  [1m[36mUser Create (5.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "ttt@t.t"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2024-05-29 08:13:04.080016"], ["updated_at", "2024-05-29 08:13:04.080016"]]
+  [1m[36mCart Create (5.0ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 42], ["created_at", "2024-05-29 08:13:04.105479"], ["updated_at", "2024-05-29 08:13:04.105479"]]
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 250ms (ActiveRecord: 20.1ms | Allocations: 22581)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-29 09:13:04 +0100
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3365)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:8
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (Duration: 4.9ms | Allocations: 1658)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 8187)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 1.0ms | Allocations: 8455)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-29 09:13:04 +0100
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-29 09:13:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-29 09:13:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/items/1" for 127.0.0.1 at 2024-05-29 09:13:06 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:12
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:13
+  Rendered items/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2678)
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 181)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5090)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.9ms | Allocations: 6454)
+
+
+Started GET "/items/styles.css" for 127.0.0.1 at 2024-05-29 09:13:06 +0100
+Started GET "/items/scripts.js" for 127.0.0.1 at 2024-05-29 09:13:06 +0100
+Processing by ItemsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1054)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=styles):
+  
+app/controllers/items_controller.rb:7:in `show'
+Processing by ItemsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 19ms (ActiveRecord: 8.9ms | Allocations: 15390)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=scripts):
+  
+app/controllers/items_controller.rb:7:in `show'
+Started POST "/carts/49/add_item/1" for 127.0.0.1 at 2024-05-29 09:13:08 +0100
+Processing by CartsController#add_item as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Ajouter au panier", "cart_id"=>"49", "item_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:41:in `add_item'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:42:in `add_item'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mCartItem Create (2.2ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 49], ["item_id", 1], ["created_at", "2024-05-29 08:13:08.872403"], ["updated_at", "2024-05-29 08:13:08.872403"]]
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+Redirected to http://127.0.0.1:3000/carts/49
+Completed 302 Found in 39ms (ActiveRecord: 10.5ms | Allocations: 14838)
+
+
+Started GET "/carts/49" for 127.0.0.1 at 2024-05-29 09:13:08 +0100
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 873)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 181)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3286)
+Completed 200 OK in 15ms (Views: 5.6ms | ActiveRecord: 1.4ms | Allocations: 8866)
+
+
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-29 09:13:08 +0100
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (1.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+Started GET "/carts/styles.css" for 127.0.0.1 at 2024-05-29 09:13:09 +0100
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 1.7ms | Allocations: 468)
+Completed 200 OK in 14ms (Views: 4.4ms | ActiveRecord: 1.7ms | Allocations: 5099)
+
+
+Processing by CartsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 1.5ms | Allocations: 4236)
+
+
+  
+ActionController::UnknownFormat (CartsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-29 09:13:09 +0100
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 0.8ms | Allocations: 468)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.1ms | Allocations: 4189)
+
+
+Started GET "/carts/assets/favicon.ico" for 127.0.0.1 at 2024-05-29 09:13:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/carts/assets/favicon.ico"):
+  
+Started POST "/carts/49/confirm_order" for 127.0.0.1 at 2024-05-29 09:13:11 +0100
+Processing by CartsController#confirm_order as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart_id"=>"49"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1 LIMIT $2[0m  [["cart_id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:56:in `confirm_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mOrder Create (3.1ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 42], ["created_at", "2024-05-29 08:13:11.813509"], ["updated_at", "2024-05-29 08:13:11.813509"]]
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:58:in `confirm_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mOrderItem Create (3.1ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["order_id", 16], ["item_id", 1], ["created_at", "2024-05-29 08:13:11.833643"], ["updated_at", "2024-05-29 08:13:11.833643"]]
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mCartItem Delete All (2.1ms)[0m  [1m[31mDELETE FROM "cart_items" WHERE "cart_items"."cart_id" = $1 AND "cart_items"."item_id" = $2[0m  [["cart_id", 49], ["item_id", 1]]
+  ↳ app/controllers/carts_controller.rb:61:in `confirm_order'
+Redirected to http://127.0.0.1:3000/orders/16
+Completed 302 Found in 48ms (ActiveRecord: 16.2ms | Allocations: 19389)
+
+
+Started GET "/orders/16" for 127.0.0.1 at 2024-05-29 09:13:11 +0100
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 16]]
+  ↳ app/views/orders/show.html.erb:8
+  [1m[36mItem Sum (1.3ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 16]]
+  ↳ app/views/orders/show.html.erb:16
+  [1m[36mCACHE Item Sum (0.0ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 16]]
+  ↳ app/views/orders/show.html.erb:21
+  Rendered orders/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 4519)
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (Duration: 1.6ms | Allocations: 734)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 7489)
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 2.9ms | Allocations: 10918)
+
+
+Started GET "/orders/styles.css" for 127.0.0.1 at 2024-05-29 09:13:11 +0100
+Processing by OrdersController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.7ms | Allocations: 3321)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=styles [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+Started GET "/orders/scripts.js" for 127.0.0.1 at 2024-05-29 09:13:12 +0100
+Processing by OrdersController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 11ms (ActiveRecord: 1.2ms | Allocations: 8035)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=scripts [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+Started GET "/orders/assets/favicon.ico" for 127.0.0.1 at 2024-05-29 09:13:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/orders/assets/favicon.ico"):
+  
+Started POST "/checkout/create?order_id=16&total=39.6" for 127.0.0.1 at 2024-05-29 09:13:14 +0100
+Processing by CheckoutController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order_id"=>"16", "total"=>"39.6"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1704)
+
+
+  
+Stripe::AuthenticationError (No API key provided. Set your API key using "Stripe.api_key = <API-KEY>". You can generate API keys from the Stripe web interface. See https://stripe.com/api for details, or email support@stripe.com if you have any questions.):
+  
+app/controllers/checkout_controller.rb:5:in `create'
+Started GET "/checkout/create?order_id=16&total=39.6" for 127.0.0.1 at 2024-05-29 09:13:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/checkout/create"):
+  
+Started POST "/checkout/create?order_id=16&total=39.6" for 127.0.0.1 at 2024-05-29 09:16:18 +0100
+Processing by CheckoutController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order_id"=>"16", "total"=>"39.6"}
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 1563)
+
+
+  
+Stripe::AuthenticationError (No API key provided. Set your API key using "Stripe.api_key = <API-KEY>". You can generate API keys from the Stripe web interface. See https://stripe.com/api for details, or email support@stripe.com if you have any questions.):
+  
+app/controllers/checkout_controller.rb:5:in `create'
+Started POST "/checkout/create?order_id=16&total=39.6" for 127.0.0.1 at 2024-05-29 09:16:20 +0100
+Processing by CheckoutController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order_id"=>"16", "total"=>"39.6"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1563)
+
+
+  
+Stripe::AuthenticationError (No API key provided. Set your API key using "Stripe.api_key = <API-KEY>". You can generate API keys from the Stripe web interface. See https://stripe.com/api for details, or email support@stripe.com if you have any questions.):
+  
+app/controllers/checkout_controller.rb:5:in `create'
+Started POST "/checkout/create?order_id=16&total=39.6" for 127.0.0.1 at 2024-05-29 09:16:31 +0100
+Processing by CheckoutController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order_id"=>"16", "total"=>"39.6"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 1563)
+
+
+  
+Stripe::AuthenticationError (No API key provided. Set your API key using "Stripe.api_key = <API-KEY>". You can generate API keys from the Stripe web interface. See https://stripe.com/api for details, or email support@stripe.com if you have any questions.):
+  
+app/controllers/checkout_controller.rb:5:in `create'
+Started GET "/carts/49" for 127.0.0.1 at 2024-05-29 09:16:33 +0100
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (3.7ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 53)
+  Rendered layouts/_nav.html.erb (Duration: 4.2ms | Allocations: 181)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 2462)
+Completed 200 OK in 79ms (Views: 23.9ms | ActiveRecord: 10.7ms | Allocations: 6124)
+
+
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-29 09:16:33 +0100
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.9ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+Started GET "/carts/styles.css" for 127.0.0.1 at 2024-05-29 09:16:33 +0100
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 0.4ms | Allocations: 53)
+Completed 200 OK in 15ms (Views: 2.0ms | ActiveRecord: 2.0ms | Allocations: 4321)
+
+
+Processing by CartsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 1.4ms | Allocations: 3937)
+
+
+  
+ActionController::UnknownFormat (CartsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-29 09:16:34 +0100
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 0.2ms | Allocations: 53)
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 3762)
+
+
+Started GET "/carts/assets/favicon.ico" for 127.0.0.1 at 2024-05-29 09:16:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/carts/assets/favicon.ico"):
+  
+Started GET "/items" for 127.0.0.1 at 2024-05-29 09:16:36 +0100
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3363)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:8
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (Duration: 4.0ms | Allocations: 1385)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 7895)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 1.5ms | Allocations: 8155)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-29 09:16:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-29 09:16:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+  
+Started GET "/items/4" for 127.0.0.1 at 2024-05-29 09:16:38 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:12
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:13
+  Rendered items/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2362)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 181)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4774)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.9ms | Allocations: 5435)
+
+
+Started GET "/items/styles.css" for 127.0.0.1 at 2024-05-29 09:16:38 +0100
+Processing by ItemsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 895)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=styles):
+  
+app/controllers/items_controller.rb:7:in `show'
+Started GET "/items/scripts.js" for 127.0.0.1 at 2024-05-29 09:16:38 +0100
+Processing by ItemsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 895)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=scripts):
+  
+app/controllers/items_controller.rb:7:in `show'
+Started GET "/items/assets/favicon.ico" for 127.0.0.1 at 2024-05-29 09:16:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/items/assets/favicon.ico"):
+  
+Started POST "/carts/49/add_item/4" for 127.0.0.1 at 2024-05-29 09:16:40 +0100
+Processing by CartsController#add_item as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Ajouter au panier", "cart_id"=>"49", "item_id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:41:in `add_item'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:42:in `add_item'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mCartItem Create (6.6ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 49], ["item_id", 4], ["created_at", "2024-05-29 08:16:40.101226"], ["updated_at", "2024-05-29 08:16:40.101226"]]
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+Redirected to http://127.0.0.1:3000/carts/49
+Completed 302 Found in 34ms (ActiveRecord: 9.1ms | Allocations: 5542)
+
+
+Started GET "/carts/49" for 127.0.0.1 at 2024-05-29 09:16:40 +0100
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 469)
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 181)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2878)
+Completed 200 OK in 13ms (Views: 6.1ms | ActiveRecord: 0.9ms | Allocations: 6561)
+
+
+Started GET "/carts/styles.css" for 127.0.0.1 at 2024-05-29 09:16:40 +0100
+Processing by CartsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-29 09:16:40 +0100
+  [1m[36mItem Load (1.9ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 2.6ms | Allocations: 4407)
+
+
+  
+ActionController::UnknownFormat (CartsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (3.1ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 1.1ms | Allocations: 468)
+Completed 200 OK in 27ms (Views: 4.8ms | ActiveRecord: 8.4ms | Allocations: 29392)
+
+
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-29 09:16:40 +0100
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 1.0ms | Allocations: 468)
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 4192)
+
+
+Started POST "/carts/49/confirm_order" for 127.0.0.1 at 2024-05-29 09:16:41 +0100
+Processing by CartsController#confirm_order as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart_id"=>"49"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1 LIMIT $2[0m  [["cart_id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:56:in `confirm_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mOrder Create (1.9ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 42], ["created_at", "2024-05-29 08:16:41.919125"], ["updated_at", "2024-05-29 08:16:41.919125"]]
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:58:in `confirm_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mOrderItem Create (2.1ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["order_id", 17], ["item_id", 4], ["created_at", "2024-05-29 08:16:41.928631"], ["updated_at", "2024-05-29 08:16:41.928631"]]
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mCartItem Delete All (2.2ms)[0m  [1m[31mDELETE FROM "cart_items" WHERE "cart_items"."cart_id" = $1 AND "cart_items"."item_id" = $2[0m  [["cart_id", 49], ["item_id", 4]]
+  ↳ app/controllers/carts_controller.rb:61:in `confirm_order'
+Redirected to http://127.0.0.1:3000/orders/17
+Completed 302 Found in 32ms (ActiveRecord: 10.5ms | Allocations: 8551)
+
+
+Started GET "/orders/17" for 127.0.0.1 at 2024-05-29 09:16:42 +0100
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 17]]
+  ↳ app/views/orders/show.html.erb:8
+  [1m[36mItem Sum (1.5ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 17]]
+  ↳ app/views/orders/show.html.erb:16
+  [1m[36mCACHE Item Sum (0.0ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 17]]
+  ↳ app/views/orders/show.html.erb:21
+  Rendered orders/show.html.erb within layouts/application (Duration: 13.9ms | Allocations: 2148)
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (Duration: 2.1ms | Allocations: 730)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 5110)
+Completed 200 OK in 25ms (Views: 15.6ms | ActiveRecord: 4.2ms | Allocations: 8128)
+
+
+Started GET "/orders/styles.css" for 127.0.0.1 at 2024-05-29 09:16:42 +0100
+Started GET "/orders/scripts.js" for 127.0.0.1 at 2024-05-29 09:16:42 +0100
+Processing by OrdersController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.4ms | Allocations: 3604)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=styles [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+Processing by OrdersController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (1.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 10ms (ActiveRecord: 1.5ms | Allocations: 12462)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=scripts [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+Started POST "/checkout/create?order_id=17&total=65.46" for 127.0.0.1 at 2024-05-29 09:16:45 +0100
+Processing by CheckoutController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order_id"=>"17", "total"=>"65.46"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1538)
+
+
+  
+Stripe::AuthenticationError (No API key provided. Set your API key using "Stripe.api_key = <API-KEY>". You can generate API keys from the Stripe web interface. See https://stripe.com/api for details, or email support@stripe.com if you have any questions.):
+  
+app/controllers/checkout_controller.rb:5:in `create'
+[dotenv] Set [36mPUBLISHABLE_KEY[0m and [36mSECRET_KEY[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/linexploit/THP/kitten/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-29 09:17:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 53.5ms | Allocations: 18601)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:8
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (Duration: 38.7ms | Allocations: 19810)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 230.7ms | Allocations: 86399)
+Completed 200 OK in 396ms (Views: 217.9ms | ActiveRecord: 16.0ms | Allocations: 373187)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-29 09:17:03 +0100
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-29 09:17:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/items/3" for 127.0.0.1 at 2024-05-29 09:17:34 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:12
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:13
+  Rendered items/show.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2714)
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 181)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 5126)
+Completed 200 OK in 26ms (Views: 16.3ms | ActiveRecord: 1.0ms | Allocations: 6511)
+
+
+Started GET "/items/styles.css" for 127.0.0.1 at 2024-05-29 09:17:34 +0100
+Processing by ItemsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 930)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=styles):
+  
+app/controllers/items_controller.rb:7:in `show'
+Started GET "/items/scripts.js" for 127.0.0.1 at 2024-05-29 09:17:34 +0100
+Processing by ItemsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 14ms (ActiveRecord: 6.0ms | Allocations: 5552)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=scripts):
+  
+app/controllers/items_controller.rb:7:in `show'
+Started POST "/carts/49/add_item/3" for 127.0.0.1 at 2024-05-29 09:17:36 +0100
+Processing by CartsController#add_item as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Ajouter au panier", "cart_id"=>"49", "item_id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:41:in `add_item'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:42:in `add_item'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mCartItem Create (1.5ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 49], ["item_id", 3], ["created_at", "2024-05-29 08:17:36.741295"], ["updated_at", "2024-05-29 08:17:36.741295"]]
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+Redirected to http://127.0.0.1:3000/carts/49
+Completed 302 Found in 46ms (ActiveRecord: 8.2ms | Allocations: 16918)
+
+
+Started GET "/carts/49" for 127.0.0.1 at 2024-05-29 09:17:36 +0100
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 877)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 181)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3290)
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 1.1ms | Allocations: 8865)
+
+
+Started GET "/carts/styles.css" for 127.0.0.1 at 2024-05-29 09:17:36 +0100
+Processing by CartsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.8ms | Allocations: 4216)
+
+
+  
+ActionController::UnknownFormat (CartsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-29 09:17:37 +0100
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 0.7ms | Allocations: 468)
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 0.9ms | Allocations: 4400)
+
+
+Started GET "/carts/assets/favicon.ico" for 127.0.0.1 at 2024-05-29 09:17:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/carts/assets/favicon.ico"):
+  
+Started POST "/carts/49/confirm_order" for 127.0.0.1 at 2024-05-29 09:17:38 +0100
+Processing by CartsController#confirm_order as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart_id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1 LIMIT $2[0m  [["cart_id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:56:in `confirm_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mOrder Create (1.9ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 42], ["created_at", "2024-05-29 08:17:38.458007"], ["updated_at", "2024-05-29 08:17:38.458007"]]
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 49]]
+  ↳ app/controllers/carts_controller.rb:58:in `confirm_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mOrderItem Create (1.7ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["order_id", 18], ["item_id", 3], ["created_at", "2024-05-29 08:17:38.478947"], ["updated_at", "2024-05-29 08:17:38.478947"]]
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mCartItem Delete All (1.1ms)[0m  [1m[31mDELETE FROM "cart_items" WHERE "cart_items"."cart_id" = $1 AND "cart_items"."item_id" = $2[0m  [["cart_id", 49], ["item_id", 3]]
+  ↳ app/controllers/carts_controller.rb:61:in `confirm_order'
+Redirected to http://127.0.0.1:3000/orders/18
+Completed 302 Found in 49ms (ActiveRecord: 14.6ms | Allocations: 19387)
+
+
+Started GET "/orders/18" for 127.0.0.1 at 2024-05-29 09:17:38 +0100
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 18]]
+  ↳ app/views/orders/show.html.erb:8
+  [1m[36mItem Sum (0.4ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 18]]
+  ↳ app/views/orders/show.html.erb:16
+  [1m[36mCACHE Item Sum (0.0ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 18]]
+  ↳ app/views/orders/show.html.erb:21
+  Rendered orders/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4562)
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (Duration: 2.4ms | Allocations: 734)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 7532)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 1.6ms | Allocations: 10920)
+
+
+Started GET "/orders/styles.css" for 127.0.0.1 at 2024-05-29 09:17:38 +0100
+Processing by OrdersController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms | Allocations: 3298)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=styles [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+Started GET "/orders/scripts.js" for 127.0.0.1 at 2024-05-29 09:17:38 +0100
+Processing by OrdersController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 42], ["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.4ms | Allocations: 3274)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=scripts [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+Started GET "/orders/assets/favicon.ico" for 127.0.0.1 at 2024-05-29 09:17:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/orders/assets/favicon.ico"):
+  
+Started POST "/checkout/create?order_id=18&total=15.9" for 127.0.0.1 at 2024-05-29 09:17:40 +0100
+Processing by CheckoutController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order_id"=>"18", "total"=>"15.9"}
+Redirected to https://checkout.stripe.com/c/pay/cs_test_a1om9ybOGqWk6PcgaDhZoVgms9GsQotW65UUKdRlIYDQFm2eVSW46pBVTK#fidkdWxOYHwnPyd1blpxYHZxWjA0VUFod2pDbFNXaUNHbk9hUVF3bX9MPXNOPTN2VEhgMmh8VVJcTXI3aW5iM0JBVmhSf3FTMkgxMnZhQGRIVFEzTl9ucTJIMzRXZGZXYz02SDU0QldpdXZPNTV3Mk9nZ3ZURCcpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl
+Completed 302 Found in 835ms (ActiveRecord: 0.0ms | Allocations: 5521)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-29 09:17:46 +0100
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3363)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:8
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 42], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (Duration: 3.9ms | Allocations: 1385)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 7892)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 1.1ms | Allocations: 8151)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-29 09:17:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-29 09:17:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+[dotenv] Set [36mPUBLISHABLE_KEY[0m and [36mSECRET_KEY[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/linexploit/THP/kitten/config/environment.rb:5)
