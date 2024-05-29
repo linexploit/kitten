@@ -20144,3 +20144,32 @@ DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rail
 =======
 >>>>>>> main
 >>>>>>> main
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/mcdp/THP/Semaine_10/kitten/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/mcdp/THP/Semaine_10/kitten/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/mcdp/THP/Semaine_10/kitten/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-29 15:34:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 120)
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:5
+  Rendered items/index.html.erb within layouts/application (Duration: 63.0ms | Allocations: 18999)
+  Rendered layouts/_nav.html.erb (Duration: 2.3ms | Allocations: 610)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 75.1ms | Allocations: 25686)
+Completed 200 OK in 473ms (Views: 70.1ms | ActiveRecord: 10.1ms | Allocations: 313491)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-29 15:34:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-29 15:34:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/mcdp/THP/Semaine_10/kitten/config/environment.rb:5)
