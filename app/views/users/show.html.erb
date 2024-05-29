@@ -1,49 +1,54 @@
 <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
-    <div class="card p-4"> 
-        <div class=" image d-flex flex-column justify-content-center align-items-center"> 
-            <div> 
-                <img src="https://www.creativefabrica.com/wp-content/uploads/2021/01/26/Cat-Icon-Graphics-8071439-1.jpg" height="100" width="100" />
-            </div> 
-            <span class="name mt-3">Profil de <%= @user.email %></span> 
-            <div class=" d-flex mt-2"> 
-                <%= link_to "Modifier le profil", edit_user_registration_path(@user), class: "btn btn-primary" %> 
-            </div> 
-        </div> 
-    </div>
+  <div class="card p-4"> 
+    <div class="image d-flex flex-column justify-content-center align-items-center"> 
+      <span class="name mt-3">Profil de <%= @user.email %></span> 
+      <div class="d-flex mt-2">
+        <% if @user.profile_picture.attached? %>
+          <%= image_tag @user.profile_picture, alt: 'Profil Picture', class: 'profile-picture' %>
+        <% else %>
+          <img src="https://www.creativefabrica.com/wp-content/uploads/2021/01/26/Cat-Icon-Graphics-8071439-1.jpg" height="100" width="100" />
+          <p>=== Il n'y a pas encore de photo de profil liée à cet utilisateur ===</p>
+        <% end %>
+      </div>
+      <div class="d-flex mt-2"> 
+        <%= link_to "Modifier le profil", edit_user_registration_path(@user), class: "btn btn-primary" %> 
+      </div> 
+    </div> 
+  </div>
 
-    <div class="card p-4">
-      <h2>Historique des commandes</h2>
+  <div class="card p-4">
+    <h2>Historique des commandes</h2>
 
-      <% if @orders.any? %>
-        <div class="accordion" id="ordersAccordion">
-          <% @orders.each do |order| %>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading<%= order.id %>">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= order.id %>" aria-expanded="true" aria-controls="collapse<%= order.id %>">
-                  Commande #<%= order.id %> - <%= l(order.created_at, format: :long) %>
-                </button>
-              </h2>
-              <div id="collapse<%= order.id %>" class="accordion-collapse collapse" aria-labelledby="heading<%= order.id %>" data-bs-parent="#ordersAccordion">
-                <div class="accordion-body">
-                  <ul class="list-group list-group-flush">
-                    <% order.items.each do |item| %>
-                      <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <%= item.title %>
-                        <span><%= number_to_currency(item.price) %></span>
-                      </li>
-                    <% end %>
+    <% if @orders.any? %>
+      <div class="accordion" id="ordersAccordion">
+        <% @orders.each do |order| %>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading<%= order.id %>">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= order.id %>" aria-expanded="true" aria-controls="collapse<%= order.id %>">
+                Commande #<%= order.id %> - <%= l(order.created_at, format: :long) %>
+              </button>
+            </h2>
+            <div id="collapse<%= order.id %>" class="accordion-collapse collapse" aria-labelledby="heading<%= order.id %>" data-bs-parent="#ordersAccordion">
+              <div class="accordion-body">
+                <ul class="list-group list-group-flush">
+                  <% order.items.each do |item| %>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                      <strong>Total</strong>
-                      <strong><%= number_to_currency(order.items.sum(:price)) %></strong>
+                      <%= item.title %>
+                      <span><%= number_to_currency(item.price) %></span>
                     </li>
-                  </ul>
-                </div>
+                  <% end %>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>Total</strong>
+                    <strong><%= number_to_currency(order.items.sum(:price)) %></strong>
+                  </li>
+                </ul>
               </div>
             </div>
-          <% end %>
-        </div>
-      <% else %>
-        <p>Vous n'avez passÃ© aucune commande.</p>
-      <% end %>      
-    </div>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <p>Vous n'avez passé aucune commande.</p>
+    <% end %>      
+  </div>
 </div>
