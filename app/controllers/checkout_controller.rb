@@ -1,4 +1,5 @@
 class CheckoutController < ApplicationController
+
   def create
     @total = params[:total].to_d
     @order_id = params[:order_id]
@@ -34,4 +35,5 @@ class CheckoutController < ApplicationController
 
   def cancel
   end
+
 end

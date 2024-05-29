@@ -18,6 +18,8 @@ gem 'dotenv-rails'
 
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
 
+gem 'sendgrid-ruby'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
