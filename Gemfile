@@ -16,6 +16,10 @@ gem 'devise'
 
 gem 'dotenv-rails'
 
+gem 'image_processing', '~> 1.2'
+gem 'mini_magick'
+
+
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]

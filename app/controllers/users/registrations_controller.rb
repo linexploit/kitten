@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
+  before_action :configure_permitted_parameters
+
   after_action :create_cart, only: [:create]
 
 
@@ -66,5 +68,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def create_cart
     current_user.create_cart if user_signed_in? && current_user.cart.nil?
+  end
+
+  def configure_account_update_params
+    devise_parameter_sanitizer.permit(:account_update, keys: [:avatar])
+  end
+
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:profile_picture])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:profile_picture])
   end
 end
