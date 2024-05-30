@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     post 'confirm_order', to: 'carts#confirm_order', as: 'confirm_order'
   end
 
+
+
   scope '/checkout' do
     post 'create', to: 'checkout#create', as: 'checkout_create'
     get 'success', to: 'checkout#success', as: 'checkout_success'

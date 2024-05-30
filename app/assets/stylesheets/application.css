@@ -18,5 +18,68 @@
  @import 'bootstrap-icons/font/bootstrap-icons';
  @import 'styles';
 
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #F5F5F5; /* Beige color */
+
+}
+
+/* Footer */
+.footer-custom {
+  background-color: #F5F5F5; /* Beige color */
+  color: #000; /* Adjust text color if needed */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+
+/* Navbar */
+.navbar-custom {
+  background-color: #F5F5F5; /* Beige color */
+}
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .nav-link {
+  color: #000; /* Adjust text color if needed */
+}
+
+
+/* Card styling */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styling */
+.btn-outline-dark {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+/* Text styling */
+.card-body .fw-bolder {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card {
+      margin-bottom: 1.5rem;
+  }
+}
 
  
