@@ -36441,3 +36441,1536 @@ ActionController::RoutingError (No route matches [GET] "/styles.css"):
   
 ActionController::RoutingError (No route matches [GET] "/scripts.js"):
   
+[dotenv] Set [36mAMAZON_ACCESS_KEY_ID[0m, [36mAMAZON_SECRET_ACCESS_KEY[0m, and [36mAWS_BUCKET[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/zealra/THP/semaine_chatons/kitten/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:31:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 48.1ms | Allocations: 18599)
+  Rendered layouts/_nav.html.erb (Duration: 2.2ms | Allocations: 870)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 24549)
+Completed 200 OK in 230ms (Views: 57.5ms | ActiveRecord: 8.1ms | Allocations: 313004)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:31:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:31:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-05-30 16:31:26 +0200
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 895)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1896)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 129)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2918)
+Completed 200 OK in 39ms (Views: 7.8ms | ActiveRecord: 2.4ms | Allocations: 13913)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:31:26 +0200
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:31:26 +0200
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 428)
+
+
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 300)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:31:28 +0200
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3373)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 146)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4548)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 4818)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:31:28 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:31:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:31:34 +0200
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3369)
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4562)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.5ms | Allocations: 4825)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:31:34 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:31:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+[dotenv] Set [36mAMAZON_ACCESS_KEY_ID[0m, [36mAMAZON_SECRET_ACCESS_KEY[0m, and [36mAWS_BUCKET[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/zealra/THP/semaine_chatons/kitten/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 23], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 23]]
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 23]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 24], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 24]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 24]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 25], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 25]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 25]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 26], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 26]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 26]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 27], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 27]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 27]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 28], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 28]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 28]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 29], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 29]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 29]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 30], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 30]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 30]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 31], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 31]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 31]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 32], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 32]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 32]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 33], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 33]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 33]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 34], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 34]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 34]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 35], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 35]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 35]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 36], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 36]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 36]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 37], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 37]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 37]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 38], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 38]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 38]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 39], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 39]]
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 39]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 40], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 40]]
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 40]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 41], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 41]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 41]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 42], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 42]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 42]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Charlie"], ["description", "Laborum eos sit. Debitis quia quibusdam. Ut dolorem aut."], ["price", "49.64"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.443602"], ["updated_at", "2024-05-30 14:33:36.443602"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smokey"], ["description", "Non dolores nesciunt. Delectus saepe asperiores. Et ducimus qui."], ["price", "74.85"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.449590"], ["updated_at", "2024-05-30 14:33:36.449590"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Alfie"], ["description", "Esse ad enim. Voluptates ex est. Ad quia ratione."], ["price", "61.95"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.454003"], ["updated_at", "2024-05-30 14:33:36.454003"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Jasper"], ["description", "Et animi dolore. Repellat sed veritatis. Placeat ut eum."], ["price", "91.49"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.458328"], ["updated_at", "2024-05-30 14:33:36.458328"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Angel"], ["description", "Repellat aspernatur ipsam. Neque voluptas sit. Sunt consequuntur sit."], ["price", "40.56"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.462695"], ["updated_at", "2024-05-30 14:33:36.462695"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Charlie"], ["description", "Iure deserunt odit. Consequatur nam ducimus. Impedit est quia."], ["price", "96.88"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.467939"], ["updated_at", "2024-05-30 14:33:36.467939"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Misty"], ["description", "Ipsam similique placeat. Quis architecto eum. Et sed corrupti."], ["price", "67.74"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.475124"], ["updated_at", "2024-05-30 14:33:36.475124"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Captain Zissou"], ["description", "Sed maxime animi. Voluptatem sit corporis. Quidem et necessitatibus."], ["price", "19.36"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.481211"], ["updated_at", "2024-05-30 14:33:36.481211"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Butterscotch"], ["description", "Illo et perferendis. Maxime praesentium delectus. Tenetur nobis mollitia."], ["price", "56.79"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.487013"], ["updated_at", "2024-05-30 14:33:36.487013"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Chloe"], ["description", "Qui molestias nihil. Ad ex dolores. Modi voluptates veniam."], ["price", "92.6"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.492183"], ["updated_at", "2024-05-30 14:33:36.492183"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (14.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lily"], ["description", "Cum qui porro. Iure nemo voluptatem. Ad quas omnis."], ["price", "53.8"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.497340"], ["updated_at", "2024-05-30 14:33:36.497340"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (2.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Max"], ["description", "Aperiam enim ipsa. Enim sint facilis. Quod id ipsum."], ["price", "60.5"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.515969"], ["updated_at", "2024-05-30 14:33:36.515969"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Captain Zissou"], ["description", "Natus sit in. Voluptas nesciunt animi. Tenetur minima non."], ["price", "23.19"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.522911"], ["updated_at", "2024-05-30 14:33:36.522911"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smudge"], ["description", "Voluptates sint labore. Nemo exercitationem inventore. Enim dolorum et."], ["price", "17.02"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.529091"], ["updated_at", "2024-05-30 14:33:36.529091"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Millie"], ["description", "Et omnis illum. In eum enim. Eos reprehenderit ab."], ["price", "25.66"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.534697"], ["updated_at", "2024-05-30 14:33:36.534697"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Millie"], ["description", "Consequatur nemo voluptatem. Magnam velit porro. Qui saepe ut."], ["price", "43.46"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.540286"], ["updated_at", "2024-05-30 14:33:36.540286"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sooty"], ["description", "Quis eum et. Nobis consequatur error. Et pariatur molestiae."], ["price", "82.21"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.546019"], ["updated_at", "2024-05-30 14:33:36.546019"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Tuna"], ["description", "Id autem et. Quia ea iure. Iste id eligendi."], ["price", "34.13"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.551900"], ["updated_at", "2024-05-30 14:33:36.551900"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Cookie Hopper"], ["description", "Nulla optio praesentium. Doloribus doloremque consectetur. Dicta quasi quia."], ["price", "72.9"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.557084"], ["updated_at", "2024-05-30 14:33:36.557084"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sam"], ["description", "Omnis est voluptas. Iste laboriosam et. Et libero et."], ["price", "79.58"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:33:36.562831"], ["updated_at", "2024-05-30 14:33:36.562831"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+[dotenv] Set [36mAMAZON_ACCESS_KEY_ID[0m, [36mAMAZON_SECRET_ACCESS_KEY[0m, and [36mAWS_BUCKET[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/zealra/THP/semaine_chatons/kitten/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:37:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 73.8ms | Allocations: 18598)
+  Rendered layouts/_nav.html.erb (Duration: 3.5ms | Allocations: 870)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 105)
+  Rendered layouts/_flash.html.erb (Duration: 0.6ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 94.3ms | Allocations: 24551)
+Completed 200 OK in 323ms (Views: 88.3ms | ActiveRecord: 11.4ms | Allocations: 313006)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:37:35 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:37:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2024-05-30 16:39:47 +0200
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 845)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1980)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3002)
+Completed 200 OK in 49ms (Views: 12.1ms | ActiveRecord: 3.6ms | Allocations: 13882)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:39:47 +0200
+Processing by UsersController#show as CSS
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:39:47 +0200
+  Parameters: {"id"=>"styles"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 407)
+
+
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-05-30 16:39:48 +0200
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 136)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 732)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 120)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1672)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2986)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:39:48 +0200
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:39:48 +0200
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-05-30 16:39:56 +0200
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.7ms | Allocations: 3569)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 427)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1320)
+Completed 200 OK in 254ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2396)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:39:56 +0200
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:39:56 +0200
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2024-05-30 16:40:02 +0200
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 72)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 425)
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 119)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1360)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2013)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:40:02 +0200
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:40:02 +0200
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-30 16:40:19 +0200
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"thomas@tom.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create account"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thomas@tom.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "thomas@tom.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2024-05-30 14:40:20.125417"], ["updated_at", "2024-05-30 14:40:20.125417"], ["admin", false]]
+  [1m[36mCart Create (1.1ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 1], ["created_at", "2024-05-30 14:40:20.152774"], ["updated_at", "2024-05-30 14:40:20.152774"]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 330ms (ActiveRecord: 11.7ms | Allocations: 24002)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:40:20 +0200
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3364)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:12
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 8.0ms | Allocations: 1483)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 28)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 5911)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 1.4ms | Allocations: 6175)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:40:20 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:40:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/users/1" for 127.0.0.1 at 2024-05-30 16:40:25 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mOrder Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "orders" WHERE "orders"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  Rendered users/show.html.erb within layouts/application (Duration: 13.4ms | Allocations: 3008)
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 2.3ms | Allocations: 758)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 4602)
+Completed 200 OK in 36ms (Views: 15.2ms | ActiveRecord: 6.3ms | Allocations: 9223)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:40:25 +0200
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:40:25 +0200
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 10ms (ActiveRecord: 0.7ms | Allocations: 2486)
+
+
+  
+ActionController::UnknownFormat (UsersController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mOrder Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "orders" WHERE "orders"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  Rendered users/show.html.erb (Duration: 12.4ms | Allocations: 4599)
+Completed 200 OK in 59ms (Views: 23.2ms | ActiveRecord: 20.5ms | Allocations: 39798)
+
+
+Started GET "/users/edit.1" for 127.0.0.1 at 2024-05-30 16:40:28 +0200
+Processing by Users::RegistrationsController#edit as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 220)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2882)
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 2.1ms | Allocations: 763)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4461)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 0.7ms | Allocations: 6358)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:40:28 +0200
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:40:28 +0200
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.4ms | Allocations: 2052)
+
+
+  
+ActionController::UnknownFormat (UsersController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mOrder Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "orders" WHERE "orders"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  Rendered users/show.html.erb (Duration: 11.0ms | Allocations: 4058)
+Completed 200 OK in 22ms (Views: 11.0ms | ActiveRecord: 5.8ms | Allocations: 10201)
+
+
+Started PUT "/users" for 127.0.0.1 at 2024-05-30 16:40:38 +0200
+Processing by Users::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007fe34b0c6eb8 @tempfile=#<Tempfile:/tmp/RackMultipart20240530-54995-qosb4b.png>, @content_type="image/png", @original_filename="—Pngtree—3d goat isolated_13128832.png", @headers="Content-Disposition: form-data; name=\"user[profile_picture]\"; filename=\"—Pngtree—3d goat isolated_13128832.png\"\r\nContent-Type: image/png\r\n">, "email"=>"thomas@tom.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `acceptable_profile_picture'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 473)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2152)
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 2.2ms | Allocations: 757)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3732)
+Completed 422 Unprocessable Entity in 556ms (Views: 11.0ms | ActiveRecord: 4.2ms | Allocations: 194151)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:40:38 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:40:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started PUT "/users" for 127.0.0.1 at 2024-05-30 16:40:48 +0200
+Processing by Users::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007fe31be40560 @tempfile=#<Tempfile:/tmp/RackMultipart20240530-54995-5dbq5.png>, @content_type="image/png", @original_filename="—Pngtree—3d goat isolated_13128832.png", @headers="Content-Disposition: form-data; name=\"user[profile_picture]\"; filename=\"—Pngtree—3d goat isolated_13128832.png\"\r\nContent-Type: image/png\r\n">, "email"=>"thomas@tom.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:15:in `acceptable_profile_picture'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `acceptable_profile_picture'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "2wr80rzcyq7jmb2btj6sqlkz43gq"], ["filename", "—Pngtree—3d goat isolated_13128832.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "amazon"], ["byte_size", 5933753], ["checksum", "jWwYZ8hf06/ldUJ9e3BNCw=="], ["created_at", "2024-05-30 14:40:49.256441"]]
+  [1m[36mActiveStorage::Attachment Create (0.9ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "profile_picture"], ["record_type", "User"], ["record_id", 1], ["blob_id", 1], ["created_at", "2024-05-30 14:40:49.260001"]]
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2024-05-30 14:40:49.264057"], ["id", 1]]
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[35mCOMMIT[0m
+[36m  S3 Storage (832.3ms) [0m[32mUploaded file to key: 2wr80rzcyq7jmb2btj6sqlkz43gq (checksum: jWwYZ8hf06/ldUJ9e3BNCw==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 2d8624d5-be09-43a6-b9b1-87d117390277) to Async(default) with arguments: #<GlobalID:0x00007fe31b8cf838 @uri=#<URI::GID gid://kitten/ActiveStorage::Blob/1>>
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 1153ms (ActiveRecord: 12.6ms | Allocations: 143549)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:40:50 +0200
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277]   [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277] Performing ActiveStorage::AnalyzeJob (Job ID: 2d8624d5-be09-43a6-b9b1-87d117390277) from Async(default) enqueued at 2024-05-30T14:40:50.114594401Z with arguments: #<GlobalID:0x00007fe31b8aa600 @uri=#<URI::GID gid://kitten/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277] Skipping image analysis because the ruby-vips gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277]   [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277]   [1m[36mActiveStorage::Blob Update (2.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277]   [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277]   [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2024-05-30 14:40:50.179391"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277]   [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2d8624d5-be09-43a6-b9b1-87d117390277] Performed ActiveStorage::AnalyzeJob (Job ID: 2d8624d5-be09-43a6-b9b1-87d117390277) from Async(default) in 60.2ms
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3363)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:12
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 6.0ms | Allocations: 1408)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5833)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 1.3ms | Allocations: 6093)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:40:50 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:40:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/users/1" for 127.0.0.1 at 2024-05-30 16:40:53 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mOrder Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "orders" WHERE "orders"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  Rendered users/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3151)
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 2.6ms | Allocations: 752)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4724)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 1.8ms | Allocations: 6381)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--80b0f40b12d7e6cc8e2d61cd7c8b3ae6a8b280b0/%E2%80%94Pngtree%E2%80%943d%20goat%20isolated_13128832.png" for 127.0.0.1 at 2024-05-30 16:40:53 +0200
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-05-30 16:40:53 +0200
+Started GET "/users/scripts.js" for 127.0.0.1 at 2024-05-30 16:40:53 +0200
+Processing by UsersController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.4ms | Allocations: 2065)
+
+
+  
+ActionController::UnknownFormat (UsersController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Processing by UsersController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (13.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:9
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mOrder Exists? (16.0ms)[0m  [1m[34mSELECT 1 AS one FROM "orders" WHERE "orders"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  Rendered users/show.html.erb (Duration: 46.5ms | Allocations: 30422)
+Completed 200 OK in 85ms (Views: 40.8ms | ActiveRecord: 24.3ms | Allocations: 52935)
+
+
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--80b0f40b12d7e6cc8e2d61cd7c8b3ae6a8b280b0", "filename"=>"—Pngtree—3d goat isolated_13128832"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  S3 Storage (2.9ms) [0m[34mGenerated URL for file at key: 2wr80rzcyq7jmb2btj6sqlkz43gq (https://projetchatonss.s3.eu-west-3.amazonaws.com/2wr80rzcyq7jmb2btj6sqlkz43gq?response-content-disposition=inline%3B%20filename%3D%22%253FPngtree%253F3d%20goat%20isolated_13128832.png%22%3B%20filename%2A%3DUTF-8%27%27%25E2%2580%2594Pngtree%25E2%2580%25943d%2520goat%2520isolated_13128832.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ3DU4TEB7ISQPEK%2F20240530%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240530T144054Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ba9cda320aac33928db1d8090d4266572762691315b638a2341c221353d621c)[0m
+Redirected to https://projetchatonss.s3.eu-west-3.amazonaws.com/2wr80rzcyq7jmb2btj6sqlkz43gq?response-content-disposition=inline%3B%20filename%3D%22%253FPngtree%253F3d%20goat%20isolated_13128832.png%22%3B%20filename%2A%3DUTF-8%27%27%25E2%2580%2594Pngtree%25E2%2580%25943d%2520goat%2520isolated_13128832.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ3DU4TEB7ISQPEK%2F20240530%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240530T144054Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ba9cda320aac33928db1d8090d4266572762691315b638a2341c221353d621c
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms | Allocations: 3351)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:41:06 +0200
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3362)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:12
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 6.8ms | Allocations: 1408)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 5826)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 1.3ms | Allocations: 6086)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:41:06 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:41:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:41:11 +0200
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3362)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:12
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 3.6ms | Allocations: 1408)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5802)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 1.1ms | Allocations: 6061)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:41:11 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:41:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+[dotenv] Set [36mAMAZON_ACCESS_KEY_ID[0m, [36mAMAZON_SECRET_ACCESS_KEY[0m, and [36mAWS_BUCKET[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/zealra/THP/semaine_chatons/kitten/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 43], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 43]]
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 43]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 44], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.7ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 44]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 44]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 45], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 45]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 45]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 46], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 46]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 46]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 47], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 47]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 47]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 48], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 48]]
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 48]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 49], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 49]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 49]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 50], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 50]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 50]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 51], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 51]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 51]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 52], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 52]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 52]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 53]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 53]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 54], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 54]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 54]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 55], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 55]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 55]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 56], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 56]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 56]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 57], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 57]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 57]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 58], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 58]]
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 58]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 59], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 59]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 59]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 60], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 60]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 60]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 61], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 61]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 61]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 62], ["record_type", "Item"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."item_id" = $1[0m  [["item_id", 62]]
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 62]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Poppy"], ["description", "Rem quis saepe. Id ad deleniti. Quaerat magni tempore."], ["price", "76.98"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:03.974086"], ["updated_at", "2024-05-30 14:43:03.974086"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Shadow"], ["description", "Molestias deleniti asperiores. Voluptas facere magnam. Vero et animi."], ["price", "48.31"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:03.980082"], ["updated_at", "2024-05-30 14:43:03.980082"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Tuna"], ["description", "Reprehenderit non voluptatum. In molestiae et. Et sapiente rerum."], ["price", "21.15"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:03.985456"], ["updated_at", "2024-05-30 14:43:03.985456"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Chloe"], ["description", "Dignissimos consequuntur esse. Sed vero neque. Et minus tempora."], ["price", "79.55"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:03.990570"], ["updated_at", "2024-05-30 14:43:03.990570"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Misty"], ["description", "Aut pariatur tempora. Expedita assumenda sit. Qui officiis saepe."], ["price", "22.93"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:03.995511"], ["updated_at", "2024-05-30 14:43:03.995511"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Bella"], ["description", "Rem maxime perferendis. Consequatur aut fugiat. Ea quibusdam reiciendis."], ["price", "84.87"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.000842"], ["updated_at", "2024-05-30 14:43:04.000842"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (2.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smokey"], ["description", "Libero temporibus et. Perferendis veniam autem. Sunt quibusdam sapiente."], ["price", "69.17"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.006212"], ["updated_at", "2024-05-30 14:43:04.006212"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sooty"], ["description", "Commodi molestiae quae. Repudiandae expedita natus. At velit aliquid."], ["price", "30.9"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.013440"], ["updated_at", "2024-05-30 14:43:04.013440"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Molly"], ["description", "Maxime voluptatum recusandae. Pariatur illo magni. Voluptatem qui at."], ["price", "56.49"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.019339"], ["updated_at", "2024-05-30 14:43:04.019339"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Butterscotch"], ["description", "Vero fuga molestiae. Veritatis molestiae a. Qui incidunt et."], ["price", "57.94"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.024852"], ["updated_at", "2024-05-30 14:43:04.024852"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (14.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sooty"], ["description", "Sed officia omnis. In beatae quisquam. Sint consequatur dolor."], ["price", "12.41"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.030734"], ["updated_at", "2024-05-30 14:43:04.030734"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (2.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Simba"], ["description", "Tenetur voluptatem totam. Exercitationem est harum. Voluptas eum placeat."], ["price", "25.55"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.049139"], ["updated_at", "2024-05-30 14:43:04.049139"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Poppy"], ["description", "Enim sed pariatur. Ut ut officia. Iure doloribus velit."], ["price", "34.94"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.054830"], ["updated_at", "2024-05-30 14:43:04.054830"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Cookie Hopper"], ["description", "Ex modi aut. Eveniet et occaecati. Assumenda eaque quod."], ["price", "82.47"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.061379"], ["updated_at", "2024-05-30 14:43:04.061379"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Poppy"], ["description", "Facere quos odit. Perferendis vitae veniam. Quia adipisci error."], ["price", "63.08"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.067616"], ["updated_at", "2024-05-30 14:43:04.067616"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lucky"], ["description", "Iste minima sint. Est tenetur vitae. Ut voluptas repellendus."], ["price", "87.9"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.072808"], ["updated_at", "2024-05-30 14:43:04.072808"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Shadow"], ["description", "Libero aperiam aliquid. Sapiente delectus est. Tempore quo excepturi."], ["price", "78.53"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.079574"], ["updated_at", "2024-05-30 14:43:04.079574"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Molly"], ["description", "Magnam rerum reiciendis. Nam velit assumenda. Necessitatibus ut vero."], ["price", "80.02"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.085008"], ["updated_at", "2024-05-30 14:43:04.085008"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Franklin Longfellow"], ["description", "Laboriosam necessitatibus aperiam. Sunt quia nam. Temporibus impedit officiis."], ["price", "70.88"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.090139"], ["updated_at", "2024-05-30 14:43:04.090139"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lily"], ["description", "Et alias nulla. Neque ea itaque. Est enim accusamus."], ["price", "91.24"], ["image_url", "https://loremflickr.com/300/300/cat"], ["created_at", "2024-05-30 14:43:04.095323"], ["updated_at", "2024-05-30 14:43:04.095323"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+[dotenv] Set [36mSENDGRID_USERNAME[0m, [36mSENDGRID_PASSWORD[0m, [36mAMAZON_ACCESS_KEY_ID[0m, [36mAMAZON_SECRET_ACCESS_KEY[0m, and [36mAWS_BUCKET[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/zealra/THP/semaine_chatons/kitten/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:51:01 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 56.1ms | Allocations: 18599)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:12
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 82.5ms | Allocations: 21287)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 107)
+  Rendered layouts/_flash.html.erb (Duration: 0.6ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 152.2ms | Allocations: 44969)
+Completed 200 OK in 315ms (Views: 140.3ms | ActiveRecord: 15.7ms | Allocations: 333424)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:51:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:51:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
+Started GET "/items/64" for 127.0.0.1 at 2024-05-30 16:51:05 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:12
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:13
+  Rendered items/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2063)
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 204)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3083)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.9ms | Allocations: 4465)
+
+
+Started GET "/items/styles.css" for 127.0.0.1 at 2024-05-30 16:51:05 +0200
+Started GET "/items/scripts.js" for 127.0.0.1 at 2024-05-30 16:51:05 +0200
+Processing by ItemsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1008)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=styles):
+  
+app/controllers/items_controller.rb:7:in `show'
+Processing by ItemsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+Completed 404 Not Found in 20ms (ActiveRecord: 8.5ms | Allocations: 24443)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=scripts):
+  
+app/controllers/items_controller.rb:7:in `show'
+Started POST "/carts/1/add_item/64" for 127.0.0.1 at 2024-05-30 16:51:07 +0200
+Processing by CartsController#add_item as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Ajouter au panier", "cart_id"=>"1", "item_id"=>"64"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:41:in `add_item'
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:42:in `add_item'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mCartItem Create (1.1ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 1], ["item_id", 64], ["created_at", "2024-05-30 14:51:07.606130"], ["updated_at", "2024-05-30 14:51:07.606130"]]
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:43:in `add_item'
+Redirected to http://127.0.0.1:3000/carts/1
+Completed 302 Found in 51ms (ActiveRecord: 10.4ms | Allocations: 15392)
+
+
+Started GET "/carts/1" for 127.0.0.1 at 2024-05-30 16:51:07 +0200
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 1]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 872)
+  Rendered layouts/_nav.html.erb (Duration: 0.8ms | Allocations: 204)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1893)
+Completed 200 OK in 18ms (Views: 7.9ms | ActiveRecord: 1.2ms | Allocations: 6799)
+
+
+Started GET "/carts/styles.css" for 127.0.0.1 at 2024-05-30 16:51:07 +0200
+Started GET "/carts/scripts.js" for 127.0.0.1 at 2024-05-30 16:51:07 +0200
+Processing by CartsController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Load (1.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 1]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+Completed 406 Not Acceptable in 15ms (ActiveRecord: 2.1ms | Allocations: 4253)
+
+
+  
+ActionController::UnknownFormat (CartsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/css"]
+request.variant: []):
+  
+actionpack (7.1.3.3) lib/action_controller/metal/implicit_render.rb:44:in `default_render'
+actionpack (7.1.3.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.11) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.11) lib/rack/etag.rb:29:in `call'
+rack (3.0.11) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.11) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.11) lib/rack/method_override.rb:28:in `call'
+rack (3.0.11) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.11) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Processing by CartsController#show as JS
+  Parameters: {"id"=>"scripts"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Load (1.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Load (1.6ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 1]]
+  ↳ app/controllers/carts_controller.rb:8:in `show'
+  Rendering carts/show.html.erb
+  Rendered carts/show.html.erb (Duration: 1.1ms | Allocations: 468)
+Completed 200 OK in 31ms (Views: 8.5ms | ActiveRecord: 4.0ms | Allocations: 26282)
+
+
+Started POST "/carts/1/confirm_order" for 127.0.0.1 at 2024-05-30 16:51:11 +0200
+Processing by CartsController#confirm_order as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:71:in `set_cart'
+  [1m[36mItem Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1 LIMIT $2[0m  [["cart_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:56:in `confirm_order'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mOrder Create (2.1ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at", "total_price", "status") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["created_at", "2024-05-30 14:51:11.452501"], ["updated_at", "2024-05-30 14:51:11.452501"], ["total_price", nil], ["status", nil]]
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:57:in `confirm_order'
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 1]]
+  ↳ app/controllers/carts_controller.rb:58:in `confirm_order'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mOrderItem Create (2.0ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["order_id", 1], ["item_id", 64], ["created_at", "2024-05-30 14:51:11.476926"], ["updated_at", "2024-05-30 14:51:11.476926"]]
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/carts_controller.rb:59:in `block in confirm_order'
+  [1m[36mCartItem Delete All (2.1ms)[0m  [1m[31mDELETE FROM "cart_items" WHERE "cart_items"."cart_id" = $1 AND "cart_items"."item_id" = $2[0m  [["cart_id", 1], ["item_id", 64]]
+  ↳ app/controllers/carts_controller.rb:61:in `confirm_order'
+Redirected to http://127.0.0.1:3000/orders/1
+Completed 302 Found in 67ms (ActiveRecord: 17.2ms | Allocations: 21879)
+
+
+Started GET "/orders/1" for 127.0.0.1 at 2024-05-30 16:51:11 +0200
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 1]]
+  ↳ app/views/orders/show.html.erb:8
+  [1m[36mItem Sum (0.6ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 1]]
+  ↳ app/views/orders/show.html.erb:16
+  [1m[36mCACHE Item Sum (0.0ms)[0m  [1m[34mSELECT SUM("items"."price") FROM "items" INNER JOIN "order_items" ON "items"."id" = "order_items"."item_id" WHERE "order_items"."order_id" = $1[0m  [["order_id", 1]]
+  ↳ app/views/orders/show.html.erb:21
+  Rendered orders/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4565)
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 2.2ms | Allocations: 756)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6142)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 1.8ms | Allocations: 8902)
+
+
+Started GET "/orders/styles.css" for 127.0.0.1 at 2024-05-30 16:51:11 +0200
+Started GET "/orders/scripts.js" for 127.0.0.1 at 2024-05-30 16:51:11 +0200
+Processing by OrdersController#show as JS
+  Parameters: {"id"=>"scripts"}
+Processing by OrdersController#show as CSS
+  Parameters: {"id"=>"styles"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 12ms (ActiveRecord: 1.2ms | Allocations: 4589)
+
+
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1 AND "orders"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", nil], ["LIMIT", 1]]
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=scripts [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+  ↳ app/controllers/orders_controller.rb:5:in `show'
+Completed 404 Not Found in 201ms (ActiveRecord: 3.0ms | Allocations: 186786)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=styles [WHERE "orders"."user_id" = $1]):
+  
+app/controllers/orders_controller.rb:5:in `show'
+Started GET "/orders/assets/favicon.ico" for 127.0.0.1 at 2024-05-30 16:51:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/orders/assets/favicon.ico"):
+  
+Started POST "/checkout/create?order_id=1&total=48.31" for 127.0.0.1 at 2024-05-30 16:51:14 +0200
+Processing by CheckoutController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "order_id"=>"1", "total"=>"48.31"}
+Redirected to https://checkout.stripe.com/c/pay/cs_test_a1K07vdHlzR4Cm9pU5JSLfbDL4RTgamCrQLtp5TlqPP4HlDv1cvZQ1mZ9J#fidkdWxOYHwnPyd1blpxYHZxWjA0VUFod2pDbFNXaUNHbk9hUVF3bX9MPXNOPTN2VEhgMmh8VVJcTXI3aW5iM0JBVmhSf3FTMkgxMnZhQGRIVFEzTl9ucTJIMzRXZGZXYz02SDU0QldpdXZPNTV3Mk9nZ3ZURCcpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl
+Completed 302 Found in 665ms (ActiveRecord: 0.0ms | Allocations: 4865)
+
+
+Started GET "/checkout/cancel" for 127.0.0.1 at 2024-05-30 16:51:29 +0200
+Processing by CheckoutController#cancel as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering checkout/cancel.html.erb within layouts/application
+  Rendered checkout/cancel.html.erb within layouts/application (Duration: 0.7ms | Allocations: 94)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:12
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 5.0ms | Allocations: 1428)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2548)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.7ms | Allocations: 2996)
+
+
+Started GET "/checkout/styles.css" for 127.0.0.1 at 2024-05-30 16:51:29 +0200
+Started GET "/checkout/scripts.js" for 127.0.0.1 at 2024-05-30 16:51:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/checkout/scripts.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/checkout/styles.css"):
+  
+Started GET "/checkout/assets/favicon.ico" for 127.0.0.1 at 2024-05-30 16:51:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/checkout/assets/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-30 16:51:32 +0200
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3363)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:12
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:14
+  Rendered layouts/_nav.html.erb (Duration: 6.4ms | Allocations: 1408)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 5820)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 1.5ms | Allocations: 6081)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-05-30 16:51:32 +0200
+Started GET "/scripts.js" for 127.0.0.1 at 2024-05-30 16:51:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/scripts.js"):
+  
