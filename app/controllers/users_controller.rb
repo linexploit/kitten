@@ -1,15 +1,15 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_user
 
   def show
-    @user = User.find(params[:id])
+    @user = current_user
     @orders = @user.orders
   end
 
   def edit
     @user = current_user
   end
+<<<<<<< HEAD
 
   def admin?
     self.admin
@@ -20,4 +20,6 @@ class UsersController < ApplicationController
   def set_user
     @user = current_user
   end
+=======
+>>>>>>> main
 end

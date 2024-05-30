@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'profile_pictures/create'
   get 'orders/show'
   root 'items#index'
   devise_for :users, controllers: {
@@ -6,7 +7,9 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
   resources :orders, only: [:show]
-  resources :users, only: [:show, :edit, :update]
+  resources :users, only: [:show, :edit, :update] do
+    resource :profile_picture, only: [:create, :update, :destroy]
+  end
   resources :items, only: [:index, :show]
   resources :carts, only: [:show, :create, :edit, :update, :destroy] do
     delete 'remove_item/:item_id', to: 'carts#remove_item', as: 'remove_item'
