@@ -74,7 +74,6 @@ Rails.application.configure do
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
 
-<<<<<<< HEAD
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.sendgrid.net',
@@ -85,8 +84,6 @@ Rails.application.configure do
     authentication: 'plain',
     enable_starttls_auto: true
   }
-=======
   config.active_storage.service = :amazon
 
->>>>>>> active_storage_prod
 end

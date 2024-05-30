@@ -80,6 +80,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_30_074738) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "total_price"
     t.string "status"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
