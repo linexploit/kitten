@@ -9,4 +9,17 @@ class UsersController < ApplicationController
   def edit
     @user = current_user
   end
+<<<<<<< HEAD
+
+  def admin?
+    self.admin
+  end
+
+  private
+
+  def set_user
+    @user = current_user
+  end
+=======
+>>>>>>> main
 end

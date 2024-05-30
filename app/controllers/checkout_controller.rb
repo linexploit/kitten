@@ -8,7 +8,7 @@ class CheckoutController < ApplicationController
         {
           price_data: {
             currency: 'eur',
-            unit_amount: (@total*100).to_i,
+            unit_amount: (@total * 100).to_i,
             product_data: {
               name: 'Rails Stripe Checkout',
             },
@@ -30,6 +30,10 @@ class CheckoutController < ApplicationController
     @session = Stripe::Checkout::Session.retrieve(params[:session_id])
     @payment_intent = Stripe::PaymentIntent.retrieve(@session.payment_intent)
     @order_id = @session.metadata.order_id
+    @order = Order.find(@order_id)
+    if @payment_intent.status == 'succeeded'
+      @order.mark_as_paid
+    end
   end
 
   def cancel

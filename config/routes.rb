@@ -23,6 +23,10 @@ Rails.application.routes.draw do
     get 'cancel', to: 'checkout#cancel', as: 'checkout_cancel'
   end
 
+  namespace :admin do
+    get 'dashboard', to: 'dashboard#index'
+  end
+
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 end

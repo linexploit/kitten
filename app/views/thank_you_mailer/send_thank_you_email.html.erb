@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Merci pour votre commande!</h1>
+<p>Bonjour <%= @user.email %>,</p>
+
+<p>Nous vous confirmons que votre commande a été passée avec succès. Voici les détails de votre commande :</p>
+
+<div>
+<h2>Produit acheté :</h2>
+<h3><%= @item.title %></h3>
+<img src="<%= attachments['product_image.jpg'].url %>">
+<p>Prix : <%= number_to_currency(@item.price) %></p>
+<!-- Autres détails du produit -->
+</div>
+
+<!-- Autres informations sur la commande, telles que l'adresse de livraison, etc. -->
+
+<p>Merci de votre achat!</p>
+</body>
+</html>
