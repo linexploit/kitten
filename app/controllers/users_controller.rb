@@ -11,6 +11,10 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def admin?
+    self.admin
+  end
+
   private
 
   def set_user
