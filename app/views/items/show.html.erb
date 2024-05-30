@@ -1,24 +1,23 @@
 <section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card mb-3">
-                    <img class="card-img-top" src="<%= @item.image_url %>" alt="<%= @item.title %>">
-                    <div class="card-body">
-                        <h2 class="card-title fw-bold"><%= @item.title %></h2>
-                        <h3 class="card-subtitle mb-2 text-muted"><%= number_to_currency(@item.price) %></h3>
-                        <p class="card-text"><%= @item.description %></p>
-                        <div class="text-center">
-                        <% if user_signed_in? %>
-                        <%= form_with url: cart_add_item_path(current_user.cart || current_user.create_cart, @item), method: :post, local: true do %>
-                          <%= submit_tag 'Ajouter au panier', class: 'btn btn-outline-dark' %>
-                        <% end %>
-                    <% else %>
-                        <%= link_to 'Log in to add to cart', new_user_session_path, class: 'btn btn-outline-dark' %>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Image du produit -->
+                <img src="<%= @item.image_url %>" alt="<%= @item.title %>" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <!-- Titre, prix, description -->
+                <h2 class="fw-bold"><%= @item.title %></h2>
+                <h3><%= number_to_currency(@item.price) %></h3>
+                <p><%= @item.description %></p>
+                <!-- Bouton "Ajouter au panier" conditionnel -->
+                <% if user_signed_in? %>
+                    <%= form_with url: cart_add_item_path(current_user.cart || current_user.create_cart, @item), method: :post, local: true do %>
+                        <%= submit_tag 'Ajouter au panier', class: 'btn btn-dark btn-lg' %>
                     <% end %>
-                        </div>
-                    </div>
-                </div>
+                <% else %>
+                    <%= link_to 'Connectez-vous pour ajouter au panier', new_user_session_path, class: 'btn btn-outline-dark' %>
+                <% end %>
             </div>
         </div>
     </div>

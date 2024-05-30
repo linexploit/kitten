@@ -1,9 +1,13 @@
 <section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
+<div class="container px-4 px-lg-5 mt-5">
+    <!-- Collection Header -->
+        <div class="mb-4">
+        <h2 class="text-start">Découvrez notre collection de <em>Kitten</em>!</h2>
+    </div>
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <% @items.each do |item| %>
                 <div class="col mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 shadow-sm border-0">
                         <!-- Product image-->
                         <img class="card-img-top" src="<%= item.image_url %>" alt="<%= item.title %>" />
                         <!-- Product details-->
@@ -12,7 +16,9 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder"><%= item.title %></h5>
                                 <!-- Product price-->
-                                <%= number_to_currency(item.price) %>
+                                <div class="product-price">
+                                    <%= number_to_currency(item.price) %>
+                                </div>
                             </div>
                         </div>
                         <!-- Product actions-->
