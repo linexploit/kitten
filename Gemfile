@@ -19,7 +19,7 @@ gem 'dotenv-rails'
 gem 'image_processing', '~> 1.2'
 gem 'mini_magick'
 
-
+gem "aws-sdk-s3", require: false
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
 
 gem 'sendgrid-ruby'
